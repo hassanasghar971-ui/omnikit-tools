@@ -19,6 +19,9 @@ export const metadata: Metadata = {
   applicationName: SITE_NAME,
   icons: { icon: "/icon.svg" },
   robots: { index: true, follow: true },
+  verification: {
+    google: "pwyfdDe7eDVI1cMvuebKjXMzJ6kFspOCtUPX7aDskuI",
+  },
   openGraph: {
     siteName: SITE_NAME,
     type: "website",
@@ -40,7 +43,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <meta name="google-site-verification" content="pwyfdDe7eDVI1cMvuebKjXMzJ6kFspOCtUPX7aDskuI" />
         <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com" />
         <link rel="dns-prefetch" href="https://googleads.g.doubleclick.net" />
